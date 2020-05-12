@@ -168,15 +168,27 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-header nav {
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+nav .links {
   flex-basis: 50%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
 }
-header nav a {
+nav .links a {
   text-decoration: none;
+  color: #212529;
+  font-size: 1.6rem;
+  margin: 0 3%;
+  font-weight: bold;
 }
 .footer {
   width: 100%;
@@ -189,11 +201,25 @@ header nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home {
+  display: flex;
+  flex-direction: column;
+}
+.home hr {
+  align-self: center;
+  border-top: 2px dashed #C0C0C0;
+  margin-top: 3%;
+  width: 100%;
+}
+.home hr.full-screen {
+  width: 100vw;
+  margin: 0;
+}
 .home header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
 }
 .home .content-section {
   margin: 30px 0;
@@ -240,4 +266,13 @@ header nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .btn {
+  border-radius: 10px;
+  width: 80%;
+  text-align: center;
+  padding: 5%;
+  font-size: 2rem;
+  background: #17A2B8;
+  color: #FFFFFF;
 }

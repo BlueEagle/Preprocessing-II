@@ -1,10 +1,18 @@
 // Navigation Styles here
-header nav {
-  flex-basis: 50%;
-  .flex(@justify: space-around);
+nav {
+  .flex(@justify:space-between);
+  padding-top: 5%;
+  padding-bottom: 3%;
 
-  a {
-    text-decoration: none;
-    
+  .links {
+    flex-basis: 50%;
+    .flex(@justify:center);
+    a {
+      text-decoration: none;
+      color: @font-color;
+      font-size: 1.6rem;
+      margin: 0 3%;
+      font-weight: bold;
+    }
   }
 }

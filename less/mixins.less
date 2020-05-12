@@ -3,5 +3,15 @@
   display: flex;
   justify-content: @justify;
   align-items: @align;
-  flex-direction: row;
+  flex-direction: @direction;
 } // flexible containers
+
+.btn-style(@bg-color: @button-bg, @txt-color: @main-bg) {
+  border-radius: 10px;
+  width: 80%;
+  text-align: center;
+  padding: 5%;
+  font-size: 2rem;
+  background: @bg-color;
+  color: @txt-color;
+}
