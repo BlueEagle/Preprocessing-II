@@ -4,9 +4,19 @@ nav {
   padding-top: 5%;
   padding-bottom: 3%;
 
+  @media @mobile {
+    flex-direction: column;
+  }
+
   .links {
     flex-basis: 50%;
     .flex(@justify:center);
+
+    @media @mobile {
+      justify-content: space-around;
+      width: 100%;
+    }
+
     a {
       text-decoration: none;
       color: @font-color;

@@ -14,4 +14,24 @@
   font-size: 2rem;
   background: @bg-color;
   color: @txt-color;
+
+  @media @mobile {
+    padding: 3% 0;
+    width: 100%;
+  }
+} // parametric buttons
+
+.pulse-shadow-text(@duration: 2s, @size: 2px) {
+  animation: pulse-shadow-text-anim @duration infinite;
+  @keyframes pulse-shadow-text-anim {
+    from {
+      text-shadow: none;
+    }
+    50% {
+      text-shadow: 0 0 @size @font-color;
+    }
+    to {
+      text-shadow: none;
+    }
+  }
 }
